@@ -2,9 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quinix</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" type="x-icon" href="imgs/tabimg.png">
+
+    <!--Boxicons CSS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <h1>Under Development!</h1>
+    
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <i class='bx bxl-codepen' ></i>
+                <span>Quinix</span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <div class="user">
+            <img src="imgs/tabimg.png" alt="img" class="user-img">
+            <div>
+                <p class="bold">Welcome!</p>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class='bx bx-home' ></i>
+                    <span class="nav-item">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-download' ></i>
+                    <span class="nav-item">Downloads</span>
+                </a>
+                <span class="tooltip">Downloads</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-signal-5' ></i>
+                    <span class="nav-item">Connect</span>
+                </a>
+                <span class="tooltip">Connect</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-code-curly' ></i>
+                    <span class="nav-item">Team</span>
+                </a>
+                <span class="tooltip">Team</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>Quinix</h1>
+        </div>
+    </div>
+
 </body>
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+    btn.onclick = function () {
+        sidebar.classList.toggle('active')
+    };
+</script>
 </html>
